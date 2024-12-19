@@ -1,0 +1,127 @@
+.discover-container {
+  padding: 0px 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   flex-direction: column;
+  .discover-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .left {
+      width: 50%;
+      header {
+        font-family: Outfit;
+        font-size: 43.24px;
+        font-weight: 700;
+        line-height: 54.48px;
+        text-align: left;
+        margin-bottom: 8px;
+      }
+      button {
+        width: 359px;
+        height: 70px;
+        border-radius: 7.86px;
+        background-color: #113454;
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+    .right {
+      position: relative;
+      width: 50%;
+      .big-box {
+        width: 486px;
+        height: 544px !important;
+        // background: #E0F1DF;
+        border-radius: 20px;
+        background-color: #e0f1df;
+      }
+      .small-box-wrap {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        width: fit-content;
+        padding: 20px;
+        border-radius: 20px;
+        gap: 10px;
+        box-shadow: 5px 7px 4px 0px #00000040;
+
+        &.one {
+          position: absolute;
+          top: 20px;
+          left: -80px;
+        }
+        &.two {
+          position: absolute;
+          top: 250px;
+          right: -80px;
+        }
+        &.three {
+          position: absolute;
+          bottom: 20px;
+          left: -80px;
+        }
+
+        // &.1-core{
+        //   position: absolute;
+        //   top: 20px;
+        //   left: -80px;
+        // }
+        // &.2-core{
+        //   position: absolute;
+        //   top: 20px;
+        //   left: -80px;
+        // }
+        // &.3-core{
+        //   position: absolute;
+        //   top: 20px;
+        //   left: -80px;
+        // }
+        // &.4-core{
+        //   position: absolute;
+        //   top: 20px;
+        //   left: -80px;
+        // }
+
+        .img-wrap {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-color: #d9d9d9;
+          display: flex;
+          align-items: center;
+
+          img {
+            // width: 48px;
+            // height: 48px;
+            // border-radius: 50%;
+          }
+        }
+
+        .wrap {
+          display: flex;
+          flex-direction: column;
+          padding: 0px;
+          span {
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22.68px;
+            text-align: left;
+            color: #282628;
+          }
+          p{
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.68px;
+            text-align: left;
+            color: #282628;
+          }
+        }
+      }
+    }
+  }
+}

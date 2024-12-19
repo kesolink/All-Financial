@@ -1,0 +1,59 @@
+.Financail-container {
+  padding: 0px 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  header {
+    text-align: center;
+    font-family: Outfit;
+    font-size: 43.24px;
+    font-weight: 700;
+    line-height: 54.48px;
+    margin-bottom: 25px;
+  }
+  .box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      img {
+        width: 96.78px;
+        height: 96.78px;
+        border-radius: 50%;
+      }
+      span {
+        font-family: Outfit;
+        font-size: 24.93px;
+        font-weight: 700;
+        line-height: 31.42px;
+        text-align: center;
+      }
+      p {
+        font-family: Outfit;
+        font-size: 24.93px;
+        font-weight: 400;
+        line-height: 31.42px;
+        text-align: center;
+      }
+    }
+  }
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      background-color: #113454;
+      width: 250px;
+      height: 70px;
+      color: #fff;
+      border-radius: 7.86px;
+      font-size: 19.12px;
+    }
+  }
+}
