@@ -9,6 +9,7 @@
   @include respond(phone) {
     padding: 0px 10px;
     min-height: 80vh;
+    margin-top: 30px;
   }
 
   .list-wrap {
