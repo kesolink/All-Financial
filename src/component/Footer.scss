@@ -46,6 +46,7 @@
         margin-bottom: 10px;
         @include respond(phone) {
           font-size: 13.35px;
+          margin-bottom: 15px;
         }
       }
       .finance{
@@ -126,6 +127,7 @@
     color: #fff;
 
     @include respond(phone) {
+      margin-top: 20px;
       font-size: 13.35px;
     }
   }
