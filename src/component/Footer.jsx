@@ -9,26 +9,30 @@ function Footer() {
           <div className="list">
             <span>All Financial</span>
           </div>
+
+          <div className="split">
           <div className="list">
             <span>Home</span>
             <span>About us</span>
             <span>Services</span>
             <span>Contact Us</span>
           </div>
-          <div className="list">
-            <span>Email</span>
-            <span>Phone</span>
-            <span>Address</span>
-          </div>
-          <div className="list">
-            <span>Linkden</span>
-            <span>Twitter</span>
-            <span>Facebook</span>
+          
+            <div className="list">
+              <span>Email</span>
+              <span>Phone</span>
+              <span>Address</span>
+            </div>
+            <div className="list">
+              <span>Linkden</span>
+              <span>Twitter</span>
+              <span>Facebook</span>
+            </div>
           </div>
           <div className="list-for-email">
             <div className="email-wrap">
               <input type="text" placeholder="Email address" />{" "}
-              <span>sign-up</span>
+              <span>Send</span>
             </div>
             <div className="icon-wrap">
               <FaFacebookSquare size={20} />

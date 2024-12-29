@@ -1,6 +1,10 @@
+@import "../mixins.scss";
 .next-container {
   padding: 0px 200px;
-  height: 50vh;
+  min-height: 50vh;
+  @include respond(phone) {
+    padding: 0px 10px;
+  }
 
   .next-wrap {
     background-color: #113454;
@@ -10,14 +14,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include respond(phone) {
+      padding: 10px;
+    }
     p {
-      font-family: Outfit;
       font-size: 43.24px;
       font-weight: 700;
       line-height: 54.48px;
       text-align: center;
       margin-bottom: 20px;
       color: #fff;
+      @include respond(phone) {
+        font-size: 22px;
+        line-height: 28.48px;
+      }
     }
 
     .btn-wrap {
@@ -32,6 +42,10 @@
         color: #113454;
         font-size: 18px;
         border-radius: 7.8px;
+        @include respond(phone) {
+          font-size: 14px;
+          
+        }
       }
       button:nth-child(2) {
         border: solid 1px grey;

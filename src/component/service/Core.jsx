@@ -9,7 +9,7 @@ function Core() {
     <div className='core-container'>
         <div className="discover-wrap">
             <div className="left">
-            <button>Banking Operations Suite</button>
+            <span>Banking Operations Suite</span>
             <header>Streamlined Core Banking Solutions</header>
             </div>
             <div className="right">

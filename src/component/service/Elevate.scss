@@ -1,24 +1,39 @@
-@import "../mixins.scss";
-.features-container {
+@import "../../mixins.scss";
+.elevate-container {
   padding: 0px 200px;
   min-height: 100vh;
-  background: #F5FCFB;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   @include respond(phone) {
     padding: 0px 10px;
   }
+  span {
+    width: 200px;
+    height: 49px;
+    padding: 15.35px 1.31px;
+    gap: 0px;
+    border-radius: 8.83px;
+    margin-top: 20px;
+    color: #282628;
+    font-size: 15.6px;
+    font-weight: 700;
+    @include respond(phone) {
+      margin-top: 0px;
+      
+    }
+  }
   header {
-    text-align: center;
     font-size: 43.24px;
     font-weight: 700;
     line-height: 54.48px;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
     @include respond(phone) {
-      font-size: 24px;
-      line-height: 28.48px;
+      font-size: 22.24px;
+      margin-top: 5px;
     }
   }
 
@@ -26,22 +41,27 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-top: 20px;
     @include respond(phone) {
       flex-direction: column;
     }
   }
   .left {
     width: 50%;
+    @include respond(phone) {
+      width: 100%;
+    }
     display: flex;
     align-items: center;
     justify-content: flex-end;
     @include respond(phone) {
-      width: 100%;
+      justify-content: center;
     }
     img {
       width: 80%;
+      border-radius: 12px;
       @include respond(phone) {
-        width: 95%;
+        width: 90%;
       }
     }
   }
@@ -49,13 +69,12 @@
     width: 50%;
     @include respond(phone) {
       width: 100%;
-      padding: 0px 10px;
     }
     .list-wrap {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
-      gap: 6px;
+      margin-bottom: 20px;
+      gap: 12px;
       .dot-wrap{
 
         .dot {
@@ -80,15 +99,16 @@
         font-weight: 400;
         line-height: 31.42px;
         @include respond(phone) {
-          font-size: 14px;
-          line-height: 21.42px;
+          font-size: 14.93px;
+          line-height: 20.42px;
         }
         span {
           font-size: 22.93px;
           font-weight: 700;
           line-height: 31.42px;
           @include respond(phone) {
-            font-size: 14.3px;
+            font-size: 14.93px;
+            line-height: 20.42px;
           }
         }
       }
@@ -100,11 +120,7 @@
       height: 70px;
       border-radius: 7.85px;
       font-size: 18.09px;
-      @include respond(phone) {
-        font-size: 14.3px;
-        width: 329px;
-      height: 40px;
-      }
     }
   }
+  
 }

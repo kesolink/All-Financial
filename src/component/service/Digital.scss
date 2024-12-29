@@ -1,12 +1,18 @@
+@import "../../mixins.scss";
 .digital-container {
   padding: 0px 200px;
-  height: 100vh;
+  min-height: 100vh;
   background: #f5fcfb;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  @include respond(phone) {
+    padding: 0px 10px;
+    padding-top: 30px;
+    max-height: 100%;
+  }
   header {
     text-align: center;
     background: #e3e6ea;
@@ -18,41 +24,73 @@
   }
   .digital-wrap {
     display: flex;
-    
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
   .left {
     width: 45%;
-    img{
-        width: 80%;
-        border: radius 20px;
-        // height: 780px;
+
+    @include respond(phone) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 80%;
+      border-radius: 20px;
+      @include respond(phone) {
+        width: 95%;
+        border-radius: 20px;
+      }
     }
   }
   .right {
     width: 60%;
+    @include respond(phone) {
+      width: 100%;
+    }
     span {
-        font-family: Outfit;
-        font-size: 43.24px;
-        font-weight: 700;
-        line-height: 54.48px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #000000
+      font-size: 43.24px;
+      font-weight: 700;
+      line-height: 54.48px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #000000;
+      @include respond(phone) {
+        font-size: 22.24px;
+        display: block; /* Make the span behave like a block element */
+        margin: auto; /* Center horizontally */
+        text-align: center;
+      }
     }
     .main-wrap {
       display: flex;
       align-items: center;
       width: 100%;
       margin-top: 20px;
+      @include respond(phone) {
+        margin-top: 10px
+      }
       .left {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
         .box {
-            padding: 10px 0px;
+          padding: 10px 0px;
+          margin-bottom: 6px;
+          @include respond(phone) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 0px;
+          }
           .img-wrap {
             width: 72px;
             height: 72px;
@@ -60,32 +98,50 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #E3E6EA;
-            margin-bottom:15px;
-
-            img{
-                width: 52px;
-                height: 52px;
+            background: #e3e6ea;
+            margin-bottom: 15px;
+            @include respond(phone) {
+              width: 55px;
+              height: 55px;
             }
-            p{
-               
-                font-family: Outfit;
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 25.2px;
-                  
+
+            img {
+              width: 52px;
+              height: 52px;
+              @include respond(phone) {
+                width: 35px;
+                height: 35px;
+              }
+            }
+            
+          }
+          .lap{
+            font-size: 20px ;
+            font-weight: 400;
+            line-height: 25.2px;
+            @include respond(phone) {
+              font-size: 13.35px;
             }
           }
         }
       }
-      .right{
+      .right {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
         .box {
-            padding: 10px 0px;
+          padding: 10px 0px;
+          margin-bottom: 6px;
+          @include respond(phone) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 0px;
+          }
           .img-wrap {
             width: 72px;
             height: 72px;
@@ -93,20 +149,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #E3E6EA;
-            margin-bottom:15px;
-
-            img{
-                width: 52px;
-                height: 52px;
+            background: #e3e6ea;
+            margin-bottom: 15px;
+            @include respond(phone) {
+              width: 55px;
+              height: 55px;
             }
-            p{
-               
-                font-family: Outfit;
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 25.2px;
-                  
+
+            img {
+              width: 52px;
+              height: 52px;
+              @include respond(phone) {
+                width: 35px;
+                height: 35px;
+              }
+            }
+            
+          }
+
+          .lap {
+            font-size: 20px ;
+            font-weight: 400;
+            line-height: 25.2px;
+            @include respond(phone) {
+              font-size: 13.35px ;
             }
           }
         }

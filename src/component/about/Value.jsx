@@ -26,7 +26,7 @@ function Value() {
             <div className="img-wrap">
                 <img src={bulb_3} alt="" />
                 </div>
-                <p> <strong>Innovation:</strong> Constantly improving to meet evolving financial needs.</p>
+                <p> <strong>Innovation:</strong>  Constantly improving to meet evolving financial needs.</p>
             </div>
         </div>
         </div>
