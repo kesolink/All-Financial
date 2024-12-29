@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.scss';
 import logo from '../../assets/logomian.png';
 import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,11 +22,12 @@ function Navbar() {
       </div>
 
       {/* Hamburger Icon */}
-      <div className="hamburger" onClick={toggleMenu}>
+      {/* <div className="hamburger" onClick={toggleMenu}>
         <span className="line"></span>
         <span className="line"></span>
         <span className="line"></span>
-      </div>
+      </div> */}
+      <GiHamburgerMenu className="hamburger" onClick={toggleMenu}/>
 
       {/* Navigation Links */}
       <div className={`wrap ${menuOpen ? 'open' : ''}`}>

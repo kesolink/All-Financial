@@ -16,6 +16,7 @@
     justify-content: center;
     @include respond(phone) {
       padding: 10px;
+      border-radius: 10px;
     }
     p {
       font-size: 43.24px;
