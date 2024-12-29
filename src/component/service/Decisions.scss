@@ -6,15 +6,18 @@
   align-items: center;
   // justify-content: center;
   justify-content: space-between;
+  margin: 60px 0px;
+  gap: 20px;
   @include respond(phone) {
     padding: 0px 10px;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 60px;
     justify-content: normal;
     gap: 15px;
     max-height: 100%;
   }
   .left {
+    // width: 50%;
     span {
       background-color: #e3e6ea;
       font-size: 15.66px;
@@ -28,6 +31,7 @@
         text-align: center; /* Center the text inside the span */
         padding: 10px 12px;
         font-size: 14px;
+        width: fit-content;
       }
     }
     header {
@@ -37,7 +41,7 @@
       font-weight: 700;
       line-height: 54.48px;
       @include respond(phone) {
-        font-size: 22.24px;
+        font-size: 20.24px;
         text-align: center;
         line-height: 23.48px;
       }
@@ -59,7 +63,9 @@
     }
   }
   .right{
+    width: 50%;
     @include respond(phone) {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -26,6 +26,7 @@
     display: flex;
     @include respond(phone) {
       flex-direction: column;
+      gap: 30px;
     }
   }
   .left {
@@ -72,7 +73,9 @@
       width: 100%;
       margin-top: 20px;
       @include respond(phone) {
-        margin-top: 10px
+        margin-top: 10px;
+        flex-direction: column;
+    
       }
       .left {
         width: 50%;

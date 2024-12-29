@@ -4,7 +4,7 @@ import img from '../../assets/elevate.png'
 function Elevate() {
   return (
     <div className='elevate-container'>
-        <span>Value-Added Features</span>
+        <span className='top'>Value-Added Features</span>
         <header>Additional Tools to Elevate Banking</header>
         <div className="feature-wrap">
         <div className="left">

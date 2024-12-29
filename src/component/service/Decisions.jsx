@@ -13,7 +13,7 @@ function Decisions() {
                 <p><strong>Reports:</strong> Generate detailed financial reports for better decision-making.</p>
             </div>
             <div className="wrap-list">
-            <IoMdCheckmarkCircle size={27}/>
+            <IoMdCheckmarkCircle size={20}/>
                 <p><strong>Middleware Integration Layer:</strong> Connect legacy systems, APIs, and payment gateways effortlessly.</p>
             </div>
             <div className="wrap-list">

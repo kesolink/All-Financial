@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-wrap">
         <div className="list-wrap">
           <div className="list">
-            <span>All Financial</span>
+            <span className="finance">All Financial</span>
           </div>
 
           <div className="split">
@@ -30,14 +30,15 @@ function Footer() {
             </div>
           </div>
           <div className="list-for-email">
-            <div className="email-wrap">
+            {/* <div className="email-wrap">
               <input type="text" placeholder="Email address" />{" "}
               <span>Send</span>
-            </div>
+            </div> */}
             <div className="icon-wrap">
-              <FaFacebookSquare size={20} />
-              <FaLinkedin size={20} />
-              <FaTwitterSquare size={20} />
+              
+              <FaFacebookSquare className="icon"  />
+              <FaLinkedin className="icon" />
+              <FaTwitterSquare className="icon" />
             </div>
           </div>
         </div>

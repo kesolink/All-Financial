@@ -56,7 +56,7 @@ function Digital() {
                             <div className="img-wrap">
                                 <img src={img6} alt="" />
                             </div>
-                            <p className='lap'><strong>Card Management:</strong>Comprehensive tools for issuing and managing payment cards.</p>
+                            <p className='lap'><strong>Card Management:</strong> Comprehensive tools for issuing and managing payment cards.</p>
                         </div>
                         
                     </div>

@@ -9,6 +9,7 @@ function Compliant() {
             <span>Compliance and Security</span>
             <p>Stay Compliant with Confidence</p>
             <div className="box-wrap">
+                <div>hello kesolink</div>
                 <div className="box">
                     <div className="img-wrap">
                         <img src={img1} alt="" />

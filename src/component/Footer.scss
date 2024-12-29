@@ -7,9 +7,10 @@
   justify-content: center;
   flex-direction: column;
   @include respond(phone) {
+    
     padding: 0px 10px;
-    min-height: 80vh;
-    margin-top: 30px;
+    min-height: 70vh;
+    // justify-content: start;
   }
 
   .list-wrap {
@@ -22,8 +23,12 @@
       // gap: 40px;
     }
     .split{
+      width: 50%;
       display: flex;
       justify-content: space-between;
+      @include respond(phone) {
+        width: 100%;
+      }
       @include respond(phone) {
         justify-content: space-between;
       }
@@ -31,14 +36,28 @@
     }
   
     .list {
+      width: 25%;
       display: flex;
       flex-direction: column;
+      @include respond(phone) {
+        width: 100%;
+      }
       span {
         margin-bottom: 10px;
+        @include respond(phone) {
+          font-size: 13.35px;
+        }
+      }
+      .finance{
+        font-size: 28px;
       }
     }
 
     .list-for-email {
+      width: 25%;
+      @include respond(phone) {
+        width: 100%;
+      }
       .email-wrap {
         height: 60px;
         display: flex;
@@ -85,6 +104,12 @@
         display: flex;
         gap: 20px;
         cursor: pointer;
+        .icon{
+          font-size: 35px;
+          @include respond(phone) {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
@@ -99,5 +124,9 @@
     margin-top: 10px;
     text-align: center;
     color: #fff;
+
+    @include respond(phone) {
+      font-size: 13.35px;
+    }
   }
 }
