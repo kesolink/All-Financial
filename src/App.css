@@ -13,3 +13,7 @@
   box-sizing: border-box;
   border: none;
 }
+a {
+  text-decoration: none;
+  /* color: #fff; */
+}

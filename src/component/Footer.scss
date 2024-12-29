@@ -42,8 +42,20 @@
       @include respond(phone) {
         width: 100%;
       }
+      .link{
+        color: #fff;
+        .span{
+          font-size: 18.35px;
+        margin-bottom: 19px;
+        @include respond(phone) {
+          font-size: 13.35px;
+          margin-bottom: 15px;
+        }
+        }
+      }
       span {
-        margin-bottom: 10px;
+        font-size: 18.35px;
+        margin-bottom: 8px;
         @include respond(phone) {
           font-size: 13.35px;
           margin-bottom: 15px;

@@ -14,7 +14,7 @@ function ServicePAge() {
       <ServiceHero />
       <Core />
       <Savings />
-      <Compliant />
+      {/* <Compliant /> */}
       <Digital />
       <Decisions />
       <Build />

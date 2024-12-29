@@ -52,7 +52,7 @@ function Features() {
                 <span>Unlimited Branches Capability:</span>  Scale your banking operations with ease.
                 </div>
             </div>
-            <button>Learn More Abouit Our ADvanced Features</button>
+            <button>Learn More About Our Advanced Features</button>
         </div>
         </div>
     </div>

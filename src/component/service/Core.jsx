@@ -20,8 +20,8 @@ function Core() {
                     <img src={img1} alt="" />
                     </div>
                     <div className="wrap">
-                        <span>Accounts Management: </span>
-                        <p> Handle customer accounts with precision.</p>
+                        <span>Past Due Management: </span>
+                        <p> Efficiently track and collect customer's overdue payment.</p>
                     </div>
                 </div>
                 <div className="small-box-wrap  core-two">
@@ -29,8 +29,8 @@ function Core() {
                     <img src={img2} alt="" />
                     </div>
                     <div className="wrap">
-                        <span>Deposits:</span>
-                        <p> Simplify deposits and withdrawals.</p>
+                        <span>Messaging:</span>
+                        <p>  Email and Sms services available.</p>
                     </div>
                 </div>
                 
@@ -39,8 +39,8 @@ function Core() {
                     <img src={img3} alt="" />
                     </div>
                     <div className="wrap">
-                        <span> Teller Systems: </span>
-                        <p> Efficient teller operations for smooth customer interactions.</p>
+                        <span> Securities: </span>
+                        <p> Government Financial instruments, etc.</p>
                     </div>
                     
                 </div>
@@ -49,8 +49,8 @@ function Core() {
                     <img src={img1} alt="" />
                     </div>
                     <div className="wrap">
-                        <span>Loans & Mortgages: </span>
-                        <p> Advanced loan tracking and repayment features.</p>
+                        <span>Past Due Mgt: </span>
+                        <p> Access your database anytime independently.</p>
                     </div>
                 </div>
             </div>

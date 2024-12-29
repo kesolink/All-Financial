@@ -20,13 +20,13 @@ function Value() {
                 <img src={bulb_2} alt="" />
                 </div>
                 
-                <p> <strong>Innovation:</strong> Constantly improving to meet evolving financial needs.</p>
+                <p> <strong>Reliability:</strong> Delivering solutions you can depend on.</p>
             </div>
             <div className="box">
             <div className="img-wrap">
                 <img src={bulb_3} alt="" />
                 </div>
-                <p> <strong>Innovation:</strong>  Constantly improving to meet evolving financial needs.</p>
+                <p> <strong>Client-Centric:</strong>  Tailored approaches for unique client challenges.</p>
             </div>
         </div>
         </div>

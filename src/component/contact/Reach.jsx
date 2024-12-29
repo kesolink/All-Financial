@@ -13,21 +13,22 @@ function Reach() {
           <img src={call} alt="" />
           <div className="wrap">
             <span>Phone</span>
-            <p>+234-456-7890</p>
+            <p>+2348067432734</p>
+            <p>+234806495 9395</p>
           </div>
         </div>
         <div className="box">
           <img src={email} alt="" />
           <div className="wrap">
             <span>Email: </span>
-            <p>support@allfinancial.com</p>
+            <p> All-Financial@dsgsgroup.com</p>
           </div>
         </div>
         <div className="box">
           <img src={place} alt="" />
           <div className="wrap">
             <span>Address: </span>
-            <p> 123 Finance Street, Cityname, Country</p>
+            <p> 46, Akinsoji Street Fadeyi, Lagos- Nigeria</p>
           </div>
         </div>
       </div>

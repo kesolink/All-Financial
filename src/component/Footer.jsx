@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer-container">
@@ -12,21 +13,21 @@ function Footer() {
 
           <div className="split">
           <div className="list">
-            <span>Home</span>
-            <span>About us</span>
-            <span>Services</span>
-            <span>Contact Us</span>
+           <Link className="link" to="/"> <span>Home</span></Link>
+           <Link className="link" to="/about"> <span>About us</span></Link>
+           <Link className="link" to="/service"> <span>Services</span></Link>
+           <Link className="link" to="/contact">  <span>Contact Us</span></Link>
           </div>
           
             <div className="list">
-              <span>Email</span>
-              <span>Phone</span>
-              <span>Address</span>
+            <a className="link" href="mailto:All-Financial@dsgsgroup.com" > <span>Email</span></a>
+            <a className="link" href="tel:+2348067432734"> <span>Phone</span></a>
+            <a  className="link" href="https://g.co/kgs/BNQH8Kv" target="_blank" rel="noopener noreferrer"> <span>Address</span></a>
             </div>
             <div className="list">
-              <span>Linkden</span>
-              <span>Twitter</span>
-              <span>Facebook</span>
+             <span>Linkden</span>
+             <span>Twitter</span>
+             <span>Facebook</span>
             </div>
           </div>
           <div className="list-for-email">

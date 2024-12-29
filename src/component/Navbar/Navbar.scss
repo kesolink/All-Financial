@@ -81,7 +81,8 @@
         font-weight: 500;
         color: #303030;
         @include respond(phone) {
-            font-size: 14px;
+            font-size: 16px;
+            margin-bottom: 5px;
           }
       }
   
