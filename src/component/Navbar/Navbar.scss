@@ -54,7 +54,7 @@
     .wrap {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 20px;
       @include respond(phone) {
         display: none;
         display: none;
@@ -77,7 +77,7 @@
     
   
       span {
-        font-size: 15.35px;
+        font-size: 18.35px;
         font-weight: 500;
         color: #303030;
         @include respond(phone) {
