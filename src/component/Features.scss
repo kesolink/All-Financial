@@ -10,6 +10,10 @@
   @include respond(phone) {
     padding: 30px 10px;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+    min-height: 80vh
+  }
   header {
     text-align: center;
     font-size: 43.24px;
@@ -19,6 +23,9 @@
     @include respond(phone) {
       font-size: 24px;
       line-height: 28.48px;
+    }
+    @include respond(tab) {
+      font-size: 30.24px;
     }
   }
 
@@ -38,10 +45,16 @@
     @include respond(phone) {
       width: 100%;
     }
+    @include respond(tab) {
+      width: 100%;
+    }
     img {
       width: 80%;
       @include respond(phone) {
         width: 95%;
+      }
+      @include respond(tab) {
+        width: 100%;
       }
     }
   }
@@ -56,6 +69,10 @@
       align-items: center;
       margin-bottom: 10px;
       gap: 6px;
+      @include respond(tab) {
+        gap: 12px;
+        margin-bottom: 14px;
+      }
       .dot-wrap{
 
         .dot {
@@ -83,12 +100,20 @@
           font-size: 14px;
           line-height: 21.42px;
         }
+        @include respond(tab) {
+          font-size: 18.93px;
+          line-height: 28.42px;
+        }
         span {
           font-size: 22.93px;
           font-weight: 700;
           line-height: 31.42px;
           @include respond(phone) {
             font-size: 14.3px;
+          }
+          @include respond(tab) {
+            font-size: 18.93px;
+            line-height: 28.42px;
           }
         }
       }
@@ -104,6 +129,10 @@
         font-size: 14.3px;
         width: 329px;
       height: 40px;
+      }
+      @include respond(tab) {
+        width: 429px;
+      height: 50px;
       }
     }
   }

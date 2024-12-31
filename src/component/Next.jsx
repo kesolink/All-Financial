@@ -7,7 +7,7 @@ function Next() {
         <div className="next-wrap">
         <p>Ready to Take Your Banking to the Next Level? </p>
         <div className="btn-wrap">
-           <Link to="/contact"> <button>Contact Us</button></Link>
+           <Link to='/contact#emailbox'> <button>Contact Us</button></Link>
            <Link to="/about"><button>Learn More About Us</button></Link>
         </div>
         </div>

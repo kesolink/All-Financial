@@ -13,6 +13,9 @@
         justify-content: center;
         // gap: 30px;
       }
+      @include respond(tab) {
+        padding: 0px 50px;
+      }
     .left{
         width: 50%;
         @include respond(phone) {
@@ -34,6 +37,11 @@
                 line-height: 34.4px;
                 margin-bottom: 10px;
               }
+              @include respond(tab) {
+                font-size: 48px;
+                line-height: 63.4px;
+                margin-bottom: 10px;
+              }
         }
         P{
            font-size: 24.34px; 
@@ -45,6 +53,11 @@
             font-size: 18px;
             line-height: 24.4px;
             margin-bottom: 13px;
+          }
+          @include respond(tab) {
+            font-size: 22.34px;
+            line-height: 29.4px;
+            margin-bottom: 15px;
           }
         }
         button{

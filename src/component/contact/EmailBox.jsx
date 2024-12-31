@@ -34,8 +34,8 @@ function EmailBox() {
     setDisable(true);
 
     emailjs
-      .sendForm('service_3wzkvqd', 'template_llgglzb', form.current, {
-        publicKey: '_CreogsEFXcSrXAvp',
+      .sendForm('service_h9lq9sn', 'template_8cxdir2', form.current, {
+        publicKey: 'ubeq31QgK_Yu31Fbe',
       })
       .then(
         () => {
@@ -60,7 +60,7 @@ function EmailBox() {
   };
 
   return (
-    <div className="emailbox-container">
+    <div id="emailbox" className="emailbox-container">
       <ToastContainer /> {/* Toast container to display notifications */}
       <div className="left">
         <header>Send Us a Message</header>

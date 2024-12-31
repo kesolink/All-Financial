@@ -10,6 +10,10 @@
     flex-direction: column;
     height: 70vh;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+    height: 60vh;
+  }
   .left {
     width: 50%;
     @include respond(phone) {
@@ -63,6 +67,9 @@
       font-weight: 700;
       background-color: #1a2f53;
       color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       @include respond(phone) {
         width: 100%;
         margin-top: 20px;

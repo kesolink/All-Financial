@@ -6,6 +6,9 @@
     padding: 30px 10px;
     min-height: 80vh;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+  }
 
   .value-main {
     height: 100%;
@@ -29,6 +32,9 @@
       line-height: 54.48px;
       @include respond(phone) {
         font-size: 28.43px;
+      }
+      @include respond(tab) {
+        font-size: 32.24px;
       }
     }
 
@@ -76,6 +82,9 @@
           text-decoration-skip-ink: none;
           @include respond(phone) {
             font-size: 16px;
+          }
+          @include respond(tab) {
+            font-size: 20.45px;
           }
         }
       }

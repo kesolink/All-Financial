@@ -8,6 +8,10 @@
     padding: 0px 10px;
     height: 60vh;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+    height: 55vh;
+  }
 
   header {
     font-size: 43.24px;
@@ -17,6 +21,9 @@
     @include respond(phone) {
         font-size: 20.24px;
       }
+      @include respond(tab) {
+        font-size: 32.24px;
+      }
   }
   .box-wrap {
     display: flex;
@@ -24,6 +31,10 @@
     justify-content: space-between;
     margin-top: 30px;
     @include respond(phone) {
+        flex-direction: column;
+        margin-top: 15px;
+      }
+      @include respond(tab) {
         flex-direction: column;
         margin-top: 15px;
       }
@@ -40,6 +51,9 @@
         justify-content: center;
         width: 80%;
         margin-top: 12px;
+      }
+      @include respond(tab) {
+        margin: 20px 0px;
       }
       img{
         @include respond(phone) {

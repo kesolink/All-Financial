@@ -9,6 +9,9 @@
       padding: 0px 10px;
       min-height: 90vh;
     }
+    @include respond(tab) {
+      padding: 0px 50px;
+    }
   .mission-main {
     display: flex;
     justify-content: center;
@@ -32,6 +35,9 @@
           font-size: 22.24px;
           text-align: center;
         }
+        @include respond(phone) {
+          font-size: 32.24px;
+        }
       }
       p {
         font-size: 24.93px;
@@ -43,6 +49,9 @@
           font-size: 16.24px;
           text-align: center;
           line-height: 20.42px;
+        }
+        @include respond(phone) {
+          font-size: 20px;
         }
       }
     }

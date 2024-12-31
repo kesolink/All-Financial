@@ -11,6 +11,9 @@
     margin-top: 30px;
     max-height: 100vh;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+  }
   header {
     text-align: center;
     font-size: 43.24px;
@@ -19,6 +22,9 @@
     margin-bottom: 25px;
     @include respond(phone) {
       font-size: 22.24px;
+    }
+    @include respond(tab) {
+      font-size: 32.24px;
     }
   }
   .box-wrapper {
@@ -55,6 +61,9 @@
           font-size: 16px;
           line-height: 21.42px;
         }
+        @include respond(tab) {
+          font-size: 20.24px;
+        }
       }
       p {
         font-size: 24.93px;
@@ -65,6 +74,9 @@
           font-size: 16px;
           line-height: 21.42px;
         }
+        @include respond(tab) {
+          font-size: 18.24px;
+        }
       }
     }
   }
@@ -72,6 +84,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    @include respond(tab) {
+      margin-top: 25px;
+    }
     button {
       background-color: #113454;
       width: 250px;
@@ -79,6 +95,18 @@
       color: #fff;
       border-radius: 7.86px;
       font-size: 19.12px;
+      @include respond(phone) {
+        width: 200px;
+      height: 40px;
+      font-size: 16.12px;
+      }
+      @include respond(tab) {
+      //   width: 200px;
+      // height: 40px;
+        width: 200px;
+      height: 60px;
+      
+      }
     }
   }
 }

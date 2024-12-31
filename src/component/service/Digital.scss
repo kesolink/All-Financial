@@ -13,6 +13,10 @@
     padding-top: 30px;
     max-height: 100%;
   }
+  @include respond(tab) {
+    padding: 20px 50px;
+    margin-top: 30px;
+  }
   header {
     text-align: center;
     background: #e3e6ea;
@@ -28,11 +32,21 @@
       flex-direction: column;
       gap: 30px;
     }
+    @include respond(tab) {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
   .left {
     width: 45%;
 
     @include respond(phone) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include respond(tab) {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -52,6 +66,9 @@
     @include respond(phone) {
       width: 100%;
     }
+    @include respond(tab) {
+      width: 100%;
+    }
     span {
       font-size: 43.24px;
       font-weight: 700;
@@ -62,6 +79,12 @@
       color: #000000;
       @include respond(phone) {
         font-size: 22.24px;
+        display: block; /* Make the span behave like a block element */
+        margin: auto; /* Center horizontally */
+        text-align: center;
+      }
+      @include respond(tab) {
+        font-size: 34.24px;
         display: block; /* Make the span behave like a block element */
         margin: auto; /* Center horizontally */
         text-align: center;

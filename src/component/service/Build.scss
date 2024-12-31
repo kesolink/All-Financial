@@ -9,6 +9,9 @@
     justify-content: center;
     align-items: center;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+  }
   .build-wrap {
     background-color: #113454;
     height: 366px;
@@ -37,6 +40,9 @@
         padding: 12px 15px;
         font-size: 14px;
       }
+      @include respond(tab) {
+        font-size: 14px;
+      }
     }
     header {
       font-size: 43.24px;
@@ -45,6 +51,9 @@
       margin-bottom: 10px;
       @include respond(phone) {
         font-size: 22.24px;
+      }
+      @include respond(tab) {
+        font-size: 32.3px;
       }
     }
     P {

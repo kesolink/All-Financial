@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.scss';
 import logo from '../../assets/logomian.png';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -43,7 +46,9 @@ function Navbar() {
         <Link onClick={closeToggle} to="/contact">
           <span>Contact Us</span>
         </Link>
-        <button onClick={closeToggle}>Get Started</button>
+        {/* <AnchorLink href='#emailbox'> <button onClick={closeToggle}>Get Started</button></AnchorLink> */}
+        <Link to='/contact#emailbox'> <button onClick={closeToggle}>Get Started</button></Link>
+        
       </div>
     </div>
   );

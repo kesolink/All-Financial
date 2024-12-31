@@ -49,7 +49,7 @@ function Core() {
                     <img src={img1} alt="" />
                     </div>
                     <div className="wrap">
-                        <span>Past Due Mgt: </span>
+                        <span>Database Accessibility: </span>
                         <p> Access your database anytime independently.</p>
                     </div>
                 </div>

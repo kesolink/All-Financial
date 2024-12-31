@@ -5,6 +5,7 @@ import Features from '../component/Features'
 import Discover from '../component/Discover'
 import Next from '../component/Next'
 import Footer from '../component/Footer'
+import Point from '../component/Point'
 
 function LandingPage() {
   return (
@@ -12,6 +13,7 @@ function LandingPage() {
         <Hero />
         <Financial />
         <Features />
+        <Point />
         <Discover />
         <Next />
         <Footer />

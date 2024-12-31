@@ -14,14 +14,13 @@ function Reach() {
           <div className="wrap">
             <span>Phone</span>
             <p>+2348067432734</p>
-            <p>+234806495 9395</p>
           </div>
         </div>
         <div className="box">
           <img src={email} alt="" />
           <div className="wrap">
             <span>Email: </span>
-            <p> All-Financial@dsgsgroup.com</p>
+            <p>allfinancialbanking@gmail.com</p>
           </div>
         </div>
         <div className="box">

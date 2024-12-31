@@ -9,11 +9,18 @@
   @include respond(phone) {
     padding: 0px 10px;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+  }
   .discover-wrap {
     width: 100%;
     display: flex;
     align-items: center;
     @include respond(phone) {
+      flex-direction: column;
+      gap: 35px;
+    }
+    @include respond(tab) {
       flex-direction: column;
       gap: 35px;
     }
@@ -27,6 +34,9 @@
         width: 100%;
         
       }
+      @include respond(tab) {
+        width: 100%;
+      }
       header {
         font-size: 43.24px;
         font-weight: 700;
@@ -37,6 +47,10 @@
           font-size: 24px;
           line-height: 34.48px;
           text-align: center;
+        }
+        @include respond(tab) {
+          font-size: 32px;
+          line-height: 32.48px;
         }
       }
       button {
@@ -52,6 +66,10 @@
         height: 40px;
         display: block; /* Makes the button a block-level element */
   margin: 10px auto 0; 
+        }
+        @include respond(tab) {
+          width: 359px;
+          height: 60px;
         }
       }
     }
@@ -94,6 +112,9 @@
           @include respond(phone) {
             left: -1px;
           }
+          @include respond(tab) {
+            left: -70px;
+          }
         }
         &.two {
           position: absolute;
@@ -102,6 +123,10 @@
           @include respond(phone) {
             right: -1px;
             top: 200px;
+          }
+          @include respond(tab) {
+            right: -130px;
+            top: 240px;
           }
         }
         &.three {

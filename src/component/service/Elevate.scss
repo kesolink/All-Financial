@@ -9,6 +9,10 @@
   @include respond(phone) {
     padding: 0px 10px;
   }
+  @include respond(tab) {
+    padding: 0px 50px;
+    min-height: 60vh;
+  }
   .top {
     
     padding: 12.35px 15.31px;
@@ -34,6 +38,11 @@
     @include respond(phone) {
       line-height: 32.48px;
       font-size: 22.24px;
+      margin-top: 5px;
+    }
+    @include respond(tab) {
+      line-height: 32.48px;
+      font-size: 32.24px;
       margin-top: 5px;
     }
   }
@@ -103,6 +112,10 @@
           font-size: 14.93px;
           line-height: 20.42px;
         }
+        @include respond(tab) {
+          font-size: 18.0px;
+          line-height: 25.42px;
+        }
         span {
           font-size: 22.93px;
           font-weight: 700;
@@ -110,6 +123,10 @@
           @include respond(phone) {
             font-size: 14.93px;
             line-height: 20.42px;
+          }
+          @include respond(tab) {
+            font-size: 18.0px;
+            line-height: 25.42px;
           }
         }
       }

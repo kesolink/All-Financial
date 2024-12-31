@@ -13,6 +13,9 @@
         padding: 0px 10px;
         height: 60px;
       }
+      @include respond(tab) {
+        padding: 0px 50px;
+      }
   
     // @include respond(phone) {
     //   padding: 3px 10px;
