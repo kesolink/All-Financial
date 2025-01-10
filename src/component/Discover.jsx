@@ -3,6 +3,7 @@ import "./Discover.scss"
 import img1 from "../assets/idea 1.png"
 import img2 from "../assets/handshake 1.png"
 import img3 from "../assets/expert 1.png"
+import { Link } from 'react-router-dom'
 
 function Discover() {
   return (
@@ -10,7 +11,7 @@ function Discover() {
         <div className="discover-wrap">
             <div className="left">
                 <header>What Sets All <br /> Financial  Apart?</header>
-                <button>Discover the All Financial Advantage</button>
+                <Link to="/service"><button>Discover the All Financial Advantage</button></Link>
             </div>
             <div className="right">
                 <div className="big-box">

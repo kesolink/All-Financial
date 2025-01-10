@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Features.scss"
 import laptob from "../assets/laptobimg.png"
+import { Link } from 'react-router-dom'
 
 function Features() {
   return (
@@ -52,7 +53,7 @@ function Features() {
                 <span>Unlimited Branches Capability:</span>  Scale your banking operations with ease.
                 </div>
             </div>
-            <button>Learn More About Our Advanced Features</button>
+            <Link to="/service"><button>Learn More About Our Advanced Features</button></Link>
         </div>
         </div>
     </div>

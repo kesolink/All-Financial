@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaSquareXTwitter } from "react-icons/fa6";
 function Footer() {
@@ -21,14 +21,14 @@ function Footer() {
           </div>
           
             <div className="list">
-            <a className="link" href="allfinancialbanking@gmail.com" > <span>Email</span></a>
+            <a className="link" href="mailto:allfinancialbanking@gmail.com" > <span>Email</span></a>
             <a className="link" href="tel:+2348067432734"> <span>Phone</span></a>
             <a  className="link" href="https://g.co/kgs/BNQH8Kv" target="_blank" rel="noopener noreferrer"> <span>Address</span></a>
             </div>
             <div className="list">
-           <span>Linkden</span>
+            <a href="https://www.linkedin.com/company/105357132/admin/dashboard/"><span>Linkden</span></a>
             <a href="https://x.com/allfincbanking"><span>Twitter</span></a>
-             <span>Facebook</span>
+            <a href="https://www.instagram.com/allfincbanking/profilecard/?igsh=MWsxdDJ2ODFjM2w3Nw=="><span>Instagram</span></a>
             </div>
           </div>
           <div className="list-for-email">
@@ -38,8 +38,9 @@ function Footer() {
             </div> */}
             <div className="icon-wrap">
               
-              <FaFacebookSquare className="icon"  />
-              <FaLinkedin className="icon" />
+              {/* <FaFacebookSquare className="icon"  /> */}
+              <a href="https://www.instagram.com/allfincbanking/profilecard/?igsh=MWsxdDJ2ODFjM2w3Nw=="><FaInstagram className="icon"/></a>
+              <a href="https://www.linkedin.com/company/105357132/admin/dashboard/"><FaLinkedin className="icon" /></a>
               <a href="https://x.com/allfincbanking"><FaSquareXTwitter className="icon" /></a>
             </div>
           </div>

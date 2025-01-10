@@ -8,7 +8,7 @@ function Level() {
         <p>Ready to Take Your Banking to the Next Level? </p>
         <div className="btn-wrap">
         <Link to='/contact#emailbox'><button>Contact Us Today</button></Link>
-            <button>Learn More About Our Service</button>
+        <Link to='/service'><button>Learn More About Our Service</button></Link>
         </div>
         </div>
     </div>

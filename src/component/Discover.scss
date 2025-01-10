@@ -1,4 +1,4 @@
-@import "../mixins.scss";
+@use "../mixins.scss";
 .discover-container {
   padding: 0px 200px;
   height: 100vh;
@@ -6,21 +6,21 @@
   align-items: center;
   justify-content: center;
   //   flex-direction: column;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     padding: 0px 10px;
   }
-  @include respond(tab) {
+  @include mixins.respond(tab) {
     padding: 0px 50px;
   }
   .discover-wrap {
     width: 100%;
     display: flex;
     align-items: center;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       flex-direction: column;
       gap: 35px;
     }
-    @include respond(tab) {
+    @include mixins.respond(tab) {
       flex-direction: column;
       gap: 35px;
     }
@@ -30,11 +30,11 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 100%;
         
       }
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         width: 100%;
       }
       header {
@@ -43,12 +43,12 @@
         line-height: 54.48px;
         text-align: left;
         margin-bottom: 8px;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 24px;
           line-height: 34.48px;
           text-align: center;
         }
-        @include respond(tab) {
+        @include mixins.respond(tab) {
           font-size: 32px;
           line-height: 32.48px;
         }
@@ -60,14 +60,14 @@
         background-color: #113454;
         color: #fff;
         font-size: 18px;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 14px;
           width: 259px;
         height: 40px;
         display: block; /* Makes the button a block-level element */
   margin: 10px auto 0; 
         }
-        @include respond(tab) {
+        @include mixins.respond(tab) {
           width: 359px;
           height: 60px;
         }
@@ -76,7 +76,7 @@
     .right {
       position: relative;
       width: 50%;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -88,7 +88,7 @@
         // background: #E0F1DF;
         border-radius: 20px;
         background-color: #e0f1df;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           width: 75%;
         }
       }
@@ -101,7 +101,7 @@
         border-radius: 20px;
         gap: 10px;
         box-shadow: 5px 7px 4px 0px #00000040;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           width: 75%;
         }
 
@@ -109,22 +109,22 @@
           position: absolute;
           top: 20px;
           left: -80px;
-          @include respond(phone) {
+          @include mixins.respond(phone) {
             left: -1px;
           }
-          @include respond(tab) {
+          @include mixins.respond(tab) {
             left: -70px;
           }
         }
         &.two {
           position: absolute;
           top: 250px;
-          right: 120px;
-          @include respond(phone) {
+          right: -20px;
+          @include mixins.respond(phone) {
             right: -1px;
             top: 200px;
           }
-          @include respond(tab) {
+          @include mixins.respond(tab) {
             right: -130px;
             top: 240px;
           }
@@ -133,7 +133,7 @@
           position: absolute;
           bottom: 20px;
           left: -80px;
-          @include respond(phone) {
+          @include mixins.respond(phone) {
             left: -1px;
           }
         }
@@ -184,7 +184,7 @@
             line-height: 22.68px;
             text-align: left;
             color: #282628;
-            @include respond(phone) {
+            @include mixins.respond(phone) {
               font-size: 12.3px;
             }
           }
@@ -194,7 +194,7 @@
             line-height: 22.68px;
             text-align: left;
             color: #282628;
-            @include respond(phone) {
+            @include mixins.respond(phone) {
               font-size: 12.3px;
             }
           }

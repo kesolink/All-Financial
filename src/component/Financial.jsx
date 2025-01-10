@@ -3,6 +3,7 @@ import "./Financial.scss";
 import frame1 from "../assets/Frame 10 - Copy.png";
 import frame2 from "../assets/Frame 12.png";
 import frame3 from "../assets/Frame 13.png";
+import { Link } from "react-router-dom";
 function Financial() {
   return (
     <div className="Financail-container">
@@ -28,7 +29,7 @@ function Financial() {
         </div>
       </div>
       <div className="btn-wrap">
-        <button>Learn More</button>
+        <Link to="/service"><button>Learn More</button></Link>
       </div>
     </div>
   );

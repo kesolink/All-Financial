@@ -1,16 +1,21 @@
-@import "../mixins.scss";
+@use "../mixins.scss";
 .footer-container {
   padding: 0px 200px;
-  min-height: 50vh;
+  min-height: 40vh;
   background-color: #031321;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     padding: 0px 10px;
-    min-height: 70vh;
+    min-height: 45vh;
   }
-  @include respond(tab) {
+  @include mixins.respond(sm-phone) {
+    padding: 0px 10px;
+    min-height: 45vh;
+    margin-top: 50px;
+  }
+  @include mixins.respond(tab) {
     padding: 0px 50px;
   }
 
@@ -18,17 +23,17 @@
     display: flex;
     color: #fff;
     justify-content: space-between;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       flex-direction: column;
     }
     .split{
       width: 50%;
       display: flex;
       justify-content: space-between;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 100%;
       }
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         justify-content: space-between;
       }
       
@@ -38,7 +43,7 @@
       width: 25%;
       display: flex;
       flex-direction: column;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 100%;
       }
       .link{
@@ -46,7 +51,7 @@
         .span{
           font-size: 18.35px;
         margin-bottom: 19px;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 13.35px;
           margin-bottom: 15px;
         }
@@ -55,7 +60,7 @@
       span {
         font-size: 18.35px;
         margin-bottom: 8px;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 13.35px;
           margin-bottom: 15px;
         }
@@ -67,14 +72,14 @@
 
     .list-for-email {
       width: 25%;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 100%;
       }
       .email-wrap {
         height: 60px;
         display: flex;
         align-items: center;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           height: 40px;
         }
         input {
@@ -87,7 +92,7 @@
           outline: none;
           color: #fff;
           font-weight: 500;
-          @include respond(phone) {
+          @include mixins.respond(phone) {
             border-radius: 10px 0px 0px 10px;
             padding: 10px 20px;
             width: 60%;
@@ -105,7 +110,7 @@
           text-align: center;
           border-radius: 0px 15px 15px 0px;
           font-weight: 500;
-          @include respond(phone) {
+          @include mixins.respond(phone) {
             border-radius: 0px 10px 10px 0px;
             width: 80px;
           }
@@ -118,7 +123,7 @@
         cursor: pointer;
         .icon{
           font-size: 35px;
-          @include respond(phone) {
+          @include mixins.respond(phone) {
             font-size: 20px;
           }
         }
@@ -137,7 +142,7 @@
     text-align: center;
     color: #fff;
 
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       margin-top: 20px;
       font-size: 13.35px;
     }

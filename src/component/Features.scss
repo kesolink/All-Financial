@@ -1,4 +1,4 @@
-@import "../mixins.scss";
+@use "../mixins.scss";
 .features-container {
   padding: 0px 200px;
   min-height: 100vh;
@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     padding: 30px 10px;
   }
-  @include respond(tab) {
+  @include mixins.respond(tab) {
     padding: 0px 50px;
     min-height: 80vh
   }
@@ -20,11 +20,11 @@
     font-weight: 700;
     line-height: 54.48px;
     margin-bottom: 20px;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       font-size: 24px;
       line-height: 28.48px;
     }
-    @include respond(tab) {
+    @include mixins.respond(tab) {
       font-size: 30.24px;
     }
   }
@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       flex-direction: column;
     }
   }
@@ -42,25 +42,25 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       width: 100%;
     }
-    @include respond(tab) {
+    @include mixins.respond(tab) {
       width: 100%;
     }
     img {
       width: 80%;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 95%;
       }
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         width: 100%;
       }
     }
   }
   .right {
     width: 50%;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       width: 100%;
       padding: 0px 10px;
     }
@@ -69,7 +69,7 @@
       align-items: center;
       margin-bottom: 10px;
       gap: 6px;
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         gap: 12px;
         margin-bottom: 14px;
       }
@@ -84,7 +84,7 @@
             box-sizing: border-box; /* Ensures padding and border don't affect width/height */
             margin: 0; /* Removes any default margin */
             padding: 0;
-            @include respond(phone) {
+            @include mixins.respond(phone) {
               width: 10px;
             height: 10px;
             }
@@ -96,11 +96,11 @@
         font-size: 22.93px;
         font-weight: 400;
         line-height: 31.42px;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
           font-size: 14px;
           line-height: 21.42px;
         }
-        @include respond(tab) {
+        @include mixins.respond(tab) {
           font-size: 18.93px;
           line-height: 28.42px;
         }
@@ -108,10 +108,10 @@
           font-size: 22.93px;
           font-weight: 700;
           line-height: 31.42px;
-          @include respond(phone) {
+          @include mixins.respond(phone) {
             font-size: 14.3px;
           }
-          @include respond(tab) {
+          @include mixins.respond(tab) {
             font-size: 18.93px;
             line-height: 28.42px;
           }
@@ -125,12 +125,12 @@
       height: 70px;
       border-radius: 7.85px;
       font-size: 18.09px;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         font-size: 14.3px;
         width: 329px;
       height: 40px;
       }
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         width: 429px;
       height: 50px;
       }

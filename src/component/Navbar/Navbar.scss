@@ -1,4 +1,4 @@
-@import "../../mixins.scss";
+@use "../../mixins.scss";
 .nav-container {
     display: flex;
     align-items: center;
@@ -9,15 +9,15 @@
     top: 0;
     z-index: 20;
     background-color: #fff;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
         padding: 0px 10px;
         height: 60px;
       }
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         padding: 0px 50px;
       }
   
-    // @include respond(phone) {
+    // @include mixins.respond(phone) {
     //   padding: 3px 10px;
   
     //   .wrap {
@@ -58,7 +58,7 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         display: none;
         display: none;
         flex-direction: column;
@@ -83,7 +83,7 @@
         font-size: 18.35px;
         font-weight: 500;
         color: #303030;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
             font-size: 16px;
             margin-bottom: 5px;
           }
@@ -98,7 +98,7 @@
         background-color: #113454;
         font-size: 15.35px;
         font-weight: 500;
-        @include respond(phone) {
+        @include mixins.respond(phone) {
             width: 100%;
           }
       }
@@ -117,7 +117,7 @@
         background-color: #000;
       }
   
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         display: flex;
       }
     }

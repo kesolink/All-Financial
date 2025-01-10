@@ -1,15 +1,15 @@
-@import "../../mixins.scss";
+@use "../../mixins.scss";
 .build-container {
   padding: 0px 200px;
   min-height: 50vh;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     padding: 0px 10px;
     margin: 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  @include respond(tab) {
+  @include mixins.respond(tab) {
     padding: 0px 50px;
   }
   .build-wrap {
@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       padding: 0px 15px;
       text-align: center;
       border-radius: 10px;
@@ -36,11 +36,11 @@
       margin-bottom: 6px;
       font-size: 15.66px;
       font-weight: 700;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         padding: 12px 15px;
         font-size: 14px;
       }
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         font-size: 14px;
       }
     }
@@ -49,10 +49,10 @@
       font-weight: 700;
       color: #fff;
       margin-bottom: 10px;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         font-size: 22.24px;
       }
-      @include respond(tab) {
+      @include mixins.respond(tab) {
         font-size: 32.3px;
       }
     }
@@ -62,7 +62,7 @@
       line-height: 25.2px;
       text-align: center;
       color: #fff;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         font-size: 14.24px;
       }
     }

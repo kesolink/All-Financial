@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Navbar.scss';
 import logo from '../../assets/logomian.png';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { RxCross2 } from "react-icons/rx";
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,12 +17,12 @@ function Navbar() {
   const closeToggle = ()=>{
     setMenuOpen(false)
   }
-  console.log(menuOpen)
+ 
 
   return (
     <div className="nav-container">
       <div className="logo-wrap">
-        <img src={logo} alt="Logo" />
+      <Link to="/"> <img src={logo} alt="Logo" /></Link>
       </div>
 
       {/* Hamburger Icon */}
@@ -30,7 +31,7 @@ function Navbar() {
         <span className="line"></span>
         <span className="line"></span>
       </div> */}
-      <GiHamburgerMenu className="hamburger" onClick={toggleMenu}/>
+        { menuOpen ? <RxCross2 className="hamburger" onClick={toggleMenu} />:<GiHamburgerMenu className="hamburger" onClick={toggleMenu}/>}
 
       {/* Navigation Links */}
       <div className={`wrap ${menuOpen ? 'open' : ''}`}>

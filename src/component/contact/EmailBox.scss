@@ -1,22 +1,22 @@
-@import "../../mixins.scss";
+@use "../../mixins.scss";
 .emailbox-container {
   padding: 0px 200px;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     padding: 0px 10px;
     flex-direction: column;
     height: 70vh;
   }
-  @include respond(tab) {
+  @include mixins.respond(tab) {
     padding: 0px 50px;
     height: 60vh;
   }
   .left {
     width: 50%;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       width: 100%;
     }
 
@@ -24,7 +24,7 @@
       font-size: 43.24px;
       font-weight: 700;
       line-height: 54.48px;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         font-size: 22.24px;
         text-align: center;
       }
@@ -38,7 +38,7 @@
     gap: 0px;
     border-radius: 21px;
     box-shadow: 0px 0px 44px 0px #00000021;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       width: 100%;
       margin-top: 20px;
     }
@@ -70,7 +70,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      @include respond(phone) {
+      @include mixins.respond(phone) {
         width: 100%;
         margin-top: 20px;
         // display: block; /* Makes the button a block-level element */
