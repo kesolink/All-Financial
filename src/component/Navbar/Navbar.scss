@@ -17,41 +17,33 @@
         padding: 0px 50px;
       }
   
-    // @include mixins.respond(phone) {
-    //   padding: 3px 10px;
-  
-    //   .wrap {
-    //     display: none;
-    //     flex-direction: column;
-    //     gap: 10px;
-    //     position: absolute;
-    //     top: 80px;
-    //     right: 0px;
-    //     background-color: #fff;
-    //     border-radius: 0px 0px 8px 8px;
-    //     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    //     padding: 10px;
-    //     z-index: 25;
-  
-    //     &.open {
-    //       display: flex;
-    //       width: 100%;
-    //     }
-  
-    //     span {
-    //       font-size: 14px;
-    //     }
-  
-    //     button {
-    //       width: 100%;
-    //     }
-    //   }
-    // }
-  
     .logo-wrap {
       display: flex;
       align-items: center;
       gap: 10px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      .wrap-fianancail{
+        display: flex;
+        flex-direction: column;
+        .all{
+          font-size: 28px;
+          font-family:Outfit;
+          color: black;
+          @include mixins.respond(phone) {
+            font-size: 24px;
+          }
+        }
+        span{
+          font-size: 12.5px;
+          color: black;
+          @include mixins.respond(phone) {
+            font-size: 12px;
+          }
+        }
+      }
     }
   
     .wrap {
@@ -59,7 +51,6 @@
       align-items: center;
       gap: 20px;
       @include mixins.respond(phone) {
-        display: none;
         display: none;
         flex-direction: column;
         gap: 10px;

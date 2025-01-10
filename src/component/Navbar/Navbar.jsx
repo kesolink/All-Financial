@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-import logo from '../../assets/logomian.png';
+import logo1 from '../../assets/favicon.png';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RxCross2 } from "react-icons/rx";
@@ -21,20 +21,24 @@ function Navbar() {
 
   return (
     <div className="nav-container">
-      <div className="logo-wrap">
-      <Link to="/"> <img src={logo} alt="Logo" /></Link>
-      </div>
+      <Link to="/">
+        <div className="logo-wrap">
+          <img src={logo1} alt="Logo" />
+          <span className="wrap-fianancail">
+            <span className="all">All-Financial</span>
+            <span>Efficiency and Productivity</span>
+          </span>
+        </div>
+      </Link>
 
-      {/* Hamburger Icon */}
-      {/* <div className="hamburger" onClick={toggleMenu}>
-        <span className="line"></span>
-        <span className="line"></span>
-        <span className="line"></span>
-      </div> */}
-        { menuOpen ? <RxCross2 className="hamburger" onClick={toggleMenu} />:<GiHamburgerMenu className="hamburger" onClick={toggleMenu}/>}
+      {menuOpen ? (
+        <RxCross2 className="hamburger" onClick={toggleMenu} />
+      ) : (
+        <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
+      )}
 
       {/* Navigation Links */}
-      <div className={`wrap ${menuOpen ? 'open' : ''}`}>
+      <div className={`wrap ${menuOpen ? "open" : ""}`}>
         <Link onClick={closeToggle} to="/">
           <span>Home</span>
         </Link>
@@ -47,9 +51,10 @@ function Navbar() {
         <Link onClick={closeToggle} to="/contact">
           <span>Contact Us</span>
         </Link>
-        {/* <AnchorLink href='#emailbox'> <button onClick={closeToggle}>Get Started</button></AnchorLink> */}
-        <Link to='/contact#emailbox'> <button onClick={closeToggle}>Get Started</button></Link>
-        
+        <Link to="/contact#emailbox">
+          {" "}
+          <button onClick={closeToggle}>Get Started</button>
+        </Link>
       </div>
     </div>
   );
