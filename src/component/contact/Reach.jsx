@@ -21,6 +21,7 @@ function Reach() {
           <div className="wrap">
             <span>Email: </span>
             <p>allfinancialbanking@gmail.com</p>
+            <p>Allfinc.customerhelp@gmail.com</p>
           </div>
         </div>
         <div className="box">
