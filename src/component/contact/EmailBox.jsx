@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import './EmailBox.scss';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import toast styles
+import 'react-toastify/dist/ReactToastify.css';
 import { ThreeDots } from 'react-loader-spinner';
 
 function EmailBox() {
@@ -39,7 +39,6 @@ function EmailBox() {
       })
       .then(
         () => {
-          // Show success toast
           toast.success('Email sent successfully!', {
             position: 'top-center',
             autoClose: 3000,
@@ -49,7 +48,6 @@ function EmailBox() {
           setDisable(false);
         },
         (error) => {
-          // Show error toast
           toast.error(`Failed to send email: ${error.text}`, {
             position: 'top-center',
             autoClose: 3000,

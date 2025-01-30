@@ -78,11 +78,11 @@
         .dot {
             width: 15px;
             height: 15px;
-            border-radius: 50%; /* Ensures the shape is a perfect circle */
+            border-radius: 50%; 
             background-color: #113454;
-            display: inline-block; /* Makes the dot behave like a text character */
-            box-sizing: border-box; /* Ensures padding and border don't affect width/height */
-            margin: 0; /* Removes any default margin */
+            display: inline-block; 
+            box-sizing: border-box; 
+            margin: 0; 
             padding: 0;
             @include mixins.respond(phone) {
               width: 10px;

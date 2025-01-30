@@ -37,7 +37,7 @@ function Navbar() {
         <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
       )}
 
-      {/* Navigation Links */}
+
       <div className={`wrap ${menuOpen ? "open" : ""}`}>
         <Link onClick={closeToggle} to="/">
           <span>Home</span>
