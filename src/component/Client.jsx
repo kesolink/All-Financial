@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import "./Client.scss"
 import { Link } from 'react-router-dom';
+import YTC from "../assets/YCT.jpg";
+import HMFB from "../assets/HMFB.jpg";
+import molusi from "../assets/molusi-logo.jpg"
 function Client() {
 
     const [hoveredLogo, setHoveredLogo] = useState(null);
@@ -15,19 +18,19 @@ function Client() {
         {
           name: "Honey Microfinance Bank",
           description: "Providing smart, secure, and flexible financial solutions for the digital age.",
-          logo: "https://media.discordapp.net/attachments/586938260610220033/1353985247208931339/IMG-20250315-WA0001.jpg?ex=67e3a486&is=67e25306&hm=0da542f3436d7b94542ac765e2abf62d6966baf96b4bb8a665485a2e2ed78b10&=&format=webp",
+          logo: HMFB,
           url: "",
         },
         {
           name: "YCT Microfinance Bank",
           description: "Bringing fast, secure, and accessible digital banking to everyone.",
-          logo: "https://media.discordapp.net/attachments/586938260610220033/1353985247431364649/IMG-20250315-WA0000.jpg?ex=67e3a486&is=67e25306&hm=1c8c5dbd241d1ec604f6875aecc9ef5a7fc689c19b234239ea7d7427e13a8d20&=&format=webp",
+          logo: YTC,
           url: "",
         },
         {
           name: "Molusi Microfinance Bank",
           description: "MFB providing grass root financial service",
-          logo: "https://media.discordapp.net/attachments/586938260610220033/1353995213810696262/Screenshot_20250325_083226_Adobe_Acrobat.jpg?ex=67e3adce&is=67e25c4e&hm=19a672b8a890a9fb30ef8a4019ce84dbbf18f59c30f2f7a550ff3b5cb41363fd&=&format=webp",
+          logo: molusi,
           url: "",
         },
       ];
