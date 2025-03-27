@@ -7,6 +7,7 @@
     justify-content: center;
     @include mixins.respond(phone) {
       padding: 0px 10px;
+      height: 100vh;
     }
     @include mixins.respond(tab) {
       padding: 0px 50px;
@@ -18,6 +19,7 @@
       align-items: center;
       @include mixins.respond(phone) {
         flex-direction: column;
+        // padding-top: 40px;
       }
       @include mixins.respond(tab) {
         flex-direction: column;
@@ -43,7 +45,7 @@
           text-align: center;
         }
         header {
-          font-size: 43.24px;
+          font-size: 35.24px;
           font-weight: 700;
           line-height: 54.48px;
           text-align: left;

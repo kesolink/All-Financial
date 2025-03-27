@@ -16,7 +16,7 @@
   }
   header {
     text-align: center;
-    font-size: 43.24px;
+    font-size: 35.24px;
     font-weight: 700;
     line-height: 54.48px;
     margin-bottom: 20px;
@@ -67,8 +67,8 @@
     .list-wrap {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
-      gap: 6px;
+      margin-bottom: 15px;
+      gap: 10px;
       @include mixins.respond(tab) {
         gap: 12px;
         margin-bottom: 14px;
@@ -76,8 +76,8 @@
       .dot-wrap{
 
         .dot {
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%; 
             background-color: #113454;
             display: inline-block; 
@@ -93,7 +93,7 @@
       }
       
       .text-wrap {
-        font-size: 22.93px;
+        font-size: 18.93px;
         font-weight: 400;
         line-height: 31.42px;
         @include mixins.respond(phone) {
@@ -105,7 +105,7 @@
           line-height: 28.42px;
         }
         span {
-          font-size: 22.93px;
+          font-size: 18.93px;
           font-weight: 700;
           line-height: 31.42px;
           @include mixins.respond(phone) {
@@ -122,9 +122,9 @@
       background-color: #113454;
       color: #fff;
       width: 429px;
-      height: 70px;
+      height: 50px;
       border-radius: 7.85px;
-      font-size: 18.09px;
+      font-size: 16.09px;
       @include mixins.respond(phone) {
         font-size: 14.3px;
         width: 329px;

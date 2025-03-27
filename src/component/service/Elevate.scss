@@ -29,7 +29,7 @@
     }
   }
   header {
-    font-size: 43.24px;
+    font-size: 35.24px;
     font-weight: 700;
     line-height: 54.48px;
     text-align: center;
@@ -88,8 +88,8 @@
       .dot-wrap{
 
         .dot {
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%; /* Ensures the shape is a perfect circle */
             background-color: #113454;
             display: inline-block; /* Makes the dot behave like a text character */
@@ -105,7 +105,7 @@
       }
       
       .text-wrap {
-        font-size: 22.93px;
+        font-size: 18.93px;
         font-weight: 400;
         line-height: 31.42px;
         @include mixins.respond(phone) {
@@ -117,7 +117,7 @@
           line-height: 25.42px;
         }
         span {
-          font-size: 22.93px;
+          font-size: 18.93px;
           font-weight: 700;
           line-height: 31.42px;
           @include mixins.respond(phone) {

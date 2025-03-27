@@ -52,7 +52,7 @@
     header {
       // font-family: Outfit;
       margin-top: 15px;
-      font-size: 43.24px;
+      font-size: 35.24px;
       font-weight: 700;
       line-height: 54.48px;
       @include mixins.respond(phone) {
@@ -78,7 +78,7 @@
       text-align: center;
       }
       p {
-        font-size: 20px;
+        font-size: 18.93px;
         line-height: 25.2px;
         text-align: left;
         @include mixins.respond(phone) {

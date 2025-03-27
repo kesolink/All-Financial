@@ -32,6 +32,7 @@
             font-weight: 700;
             line-height: 73.4px;
             color: #fff;
+            margin-bottom: 10px;
             @include mixins.respond(phone) {
                 font-size: 28px;
                 line-height: 34.4px;
@@ -44,11 +45,11 @@
               }
         }
         P{
-           font-size: 24.34px; 
+           font-size: 20.34px; 
            line-height: 30.67px;
            flex-wrap: 700;
            color: #fff;
-           margin-bottom: 8px;
+           margin-bottom: 10px;
            @include mixins.respond(phone) {
             font-size: 18px;
             line-height: 24.4px;
@@ -62,9 +63,9 @@
         }
         button{
             width: 287px;
-            height: 72.13px;
+            height: 50.13px;
             border-radius: 9.23px;
-            font-size: 22.46px;
+            font-size:18.46px;
             font-weight: 700;
             color: #1A2F53;
             background-color: #fff;

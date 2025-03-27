@@ -48,8 +48,9 @@
       }
       .link{
         color: #fff;
+        margin-bottom: 5px;
         .span{
-          font-size: 18.35px;
+          font-size: 17px;
         margin-bottom: 19px;
         @include mixins.respond(phone) {
           font-size: 13.35px;
@@ -58,7 +59,7 @@
         }
       }
       span {
-        font-size: 18.35px;
+        font-size: 16px;
         margin-bottom: 8px;
         @include mixins.respond(phone) {
           font-size: 13.35px;

@@ -24,7 +24,7 @@
       border-radius: 10px;
     }
     p {
-      font-size: 43.24px;
+      font-size: 35.24px;
       font-weight: 700;
       line-height: 54.48px;
       text-align: center;
@@ -54,7 +54,7 @@
         padding: 15px 30px;
         background-color: #fff;
         color: #113454;
-        font-size: 18px;
+        font-size: 17px;
         border-radius: 7.8px;
         @include mixins.respond(phone) {
           font-size: 14px;

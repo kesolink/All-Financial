@@ -78,7 +78,7 @@
         }
       }
       header{
-        font-size: 43.24px;
+        font-size: 35.24px;
         font-weight: 700;
         line-height: 54.48px;
         @include mixins.respond(phone) {
@@ -92,7 +92,7 @@
         }
       }
       p{
-        font-size: 24.93px;
+        font-size: 20.93px;
         font-weight: 400;
         line-height: 31.42px;
         @include mixins.respond(phone) {
