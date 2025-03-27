@@ -18,7 +18,6 @@ function LandingPage() {
         <Point />
         <Discover />
         <Client />
-
         <Testimony />
         <Next />
         <Footer />

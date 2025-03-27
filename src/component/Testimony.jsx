@@ -13,7 +13,7 @@ const Testimony = () => {
       position: 'CFO at TechVision Global',
       company: 'TechVision Global',
       image: 'https://public.readdy.ai/ai/img_res/6e8ae144fbdae1474d3a2119aee8a8e3.jpg',
-      text: 'All Financail attend to an issue promptly.',
+      text: 'All Financial attend to an issue promptly.',
       rating: 5,
       date: '2025-03-20',
     },

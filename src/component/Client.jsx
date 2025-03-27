@@ -46,11 +46,8 @@ function Client() {
 
         <div className="client-grid">
           {clients.map((client, index) => (
-            <a
-              key={client.name}
-              href={client.url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
+              key={client.name}         
               className="client-card"
               onMouseEnter={() => setHoveredLogo(index)}
               onMouseLeave={() => setHoveredLogo(null)}
@@ -68,13 +65,13 @@ function Client() {
                   <p className="description">{client.description}</p>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
         <div className="cta-section">
           <p className="cta-text">
-            Join rusted clients companies already growing with us
+            Join Trusted clients companies already growing with us
           </p>
           <Link to="/contact"><button className="cta-button">
             Become Our Partner
