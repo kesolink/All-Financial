@@ -3,15 +3,15 @@
   padding: 0px 200px;
   min-height: 100vh;
   display: flex;
-    justify-content: center;
-    align-items: center;
-    @include mixins.respond(phone) {
-      padding: 0px 10px;
-      min-height: 90vh;
-    }
-    @include mixins.respond(tab) {
-      padding: 0px 50px;
-    }
+  justify-content: center;
+  align-items: center;
+  @include mixins.respond(phone) {
+    padding: 0px 10px;
+    min-height: 90vh;
+  }
+  @include mixins.respond(tab) {
+    padding: 0px 50px;
+  }
   .mission-main {
     display: flex;
     justify-content: center;
@@ -24,6 +24,7 @@
       @include mixins.respond(phone) {
         padding: 0px 20px;
         width: 100%;
+        padding-top: 10px;
       }
       header {
         font-size: 35.24px;
@@ -46,12 +47,31 @@
         text-align: left;
         color: #282628;
         @include mixins.respond(phone) {
-          font-size: 16.24px;
+          font-size: 12.24px;
           text-align: center;
           line-height: 20.42px;
         }
         @include mixins.respond(phone) {
           font-size: 20px;
+        }
+      }
+      .wrap {
+        margin-bottom: 20px;
+
+        p {
+          font-size: 20.93px;
+          font-weight: 400;
+          line-height: 31.42px;
+          text-align: left;
+          color: #282628;
+          @include mixins.respond(phone) {
+            font-size: 16.24px !important;
+            text-align: center;
+            line-height: 20.42px;
+          }
+          @include mixins.respond(phone) {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -68,7 +88,7 @@
         justify-content: center;
         align-items: center;
       }
-      img{
+      img {
         @include mixins.respond(phone) {
           width: 100%;
         }

@@ -30,7 +30,7 @@ function Core() {
                     </div>
                     <div className="wrap">
                         <span>Messaging:</span>
-                        <p>  Email and Sms services available.</p>
+                        <p>  MULTI-TENANT and INTERBRANCH Functionality</p>
                     </div>
                 </div>
                 
@@ -39,8 +39,8 @@ function Core() {
                     <img src={img3} alt="" />
                     </div>
                     <div className="wrap">
-                        <span> Securities: </span>
-                        <p> Government Financial instruments, etc.</p>
+                        <span> EASILY CREATE YOUR OWN PRODUCT: </span>
+                        <p> Quick product creation and speedy go-to market</p>
                     </div>
                     
                 </div>
@@ -50,7 +50,7 @@ function Core() {
                     </div>
                     <div className="wrap">
                         <span>Database Accessibility: </span>
-                        <p> Access your database anytime independently.</p>
+                        <p> Access and manage your data anytime and independently</p>
                     </div>
                 </div>
             </div>
