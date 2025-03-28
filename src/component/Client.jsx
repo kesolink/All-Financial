@@ -83,36 +83,3 @@ function Client() {
 }
 
 export default Client
-
-
-
-
-
-// {videoUrlSelected ? (
-//     <JWPlayer
-//       library="https://cdn.jwplayer.com/libraries/HT7Dts3H.js" // Updated library
-//       licenseKey="6A187VGxhSB65jBlTtuEk7U0pu+jYZ21fZE9AOU/d6CSMV2b" // Verify key validity
-//       playlist={[
-//         {
-//           file: videoUrlSelected,
-//           image: spkvideo?.thumbnail_url,
-//         },
-//       ]}
-//       playbackRateControls={true}
-//       autostart={false}
-//       aspectRatio="16:9"
-//       customProps={{
-//         hlsjsConfig: {
-//           debug: true, // Enable HLS.js debugging
-//           capLevelToPlayerSize: true, // Auto quality adjustment
-//         },
-//       }}
-//     />
-//   ) : (
-//     <div className="video-loader">
-//       <ImSpinner9 className="spinner" />
-//     </div>
-//   )}
-
-
-// import JWPlayer from "@jwplayer/jwplayer-react";
