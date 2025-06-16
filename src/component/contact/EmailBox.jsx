@@ -19,6 +19,8 @@ function EmailBox() {
     setFormData({ ...formData, [name]: value });
   };
 
+  console.log(formData.from_email)
+
   const sendEmail = (e) => {
     e.preventDefault();
 

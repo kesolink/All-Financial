@@ -7,6 +7,9 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import { useEffect } from 'react';
 import ScrollToTop from './ScrollToTop';
+import Ticket from './pages/Ticket';
+import TicketDetail from './component/tickets/TicketDetail';
+import { Toaster} from 'sonner'
 
 function App() {
   useEffect(() => {
@@ -15,12 +18,15 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Toaster position="top-right" />
       <ScrollToTop />
       <Routes>
       <Route  path="/" element={<LandingPage/>}/>
       <Route  path="/about" element={<AboutPage />}/>
       <Route  path="/service" element={<ServicePAge />}/>
       <Route  path="/contact" element={<ContactPage />}/>
+      <Route  path="/ticket" element={<Ticket />}/>
+      <Route  path="/ticket/:id" element={<TicketDetail />}/>
       </Routes>
     </div>
   );

@@ -1,0 +1,195 @@
+@use "../../mixins.scss";
+.detail-container {
+  padding: 0px 200px;
+  @include mixins.respond(phone) {
+    padding: 0px 10px;
+  }
+  .top-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+    .wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 5px 15px;
+      border-radius: 7px;
+      font-weight: 400;
+      &:hover {
+        background-color: hsl(210 40% 96.1%);
+        padding: 5px 15px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    span {
+      font-size: 24px;
+      font-weight: 700;
+      @include mixins.respond(phone) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .ticket-wrapper {
+    border: 1px solid blue;
+    border-radius: 6px;
+    padding: 24px;
+    @include mixins.respond(phone) {
+      padding: 12px;
+    }
+
+    .top {
+      .top-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        span {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .ticket-title {
+          display: -webkit-box;
+          -webkit-line-clamp: 1; /* Limits text to 2 lines */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .status {
+          padding: 3px 12px;
+          border-radius: 15px;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: #fff;
+
+          &.new {
+            background-color: #22c55e; // green
+          }
+
+          &.processing {
+            background-color: #eab308; // yellow
+          }
+
+          &.closed {
+            background-color: #ef4444; // red
+          }
+        }
+      }
+      .tic-id {
+        color: hsl(215.4 16.3% 46.9%);
+        font-size: 14px;
+        margin-bottom: 50px;
+      }
+    }
+    .wrap-detail {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include mixins.respond(phone) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .wrap {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      @include mixins.respond(phone) {
+        font-size: 14px;
+      }
+    }
+
+    hr {
+      width: 100%;
+      height: 1px;
+      background-color: yellow;
+      margin: 20px 0px;
+    }
+
+    .des-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .tic-content {
+      margin-top: 10px;
+      padding: 16px;
+      font-size: 14px;
+      background-color: hsl(210 40% 96.1%);
+      border-radius: 3px;
+      @include mixins.respond(phone) {
+        padding: 10px;
+      }
+    }
+
+    .last-group {
+      margin-top: 24px;
+      .last-lable {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 8px 16px;
+          background-color: red;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 14px;
+          margin-top: 12px;
+          cursor: pointer;
+          @include mixins.respond(phone) {
+            font-size: 12px !important;
+          }
+        }
+      }
+
+      .last-btn-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 8px 16px;
+          background-color: rgb(202 138 4);
+          color: #fff;
+          border-radius: 5px;
+          font-size: 14px;
+          margin-top: 12px;
+          cursor: pointer;
+          @include mixins.respond(phone) {
+            font-size: 10px;
+            padding: 8px 8px;
+          }
+
+          &:last-child {
+            background-color: green;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import EmailBox from '../component/contact/EmailBox'
 import Reach from '../component/contact/Reach'
 import Footer from '../component/Footer'
 import { useLocation } from 'react-router-dom'
+import TicketForm from '../component/contact/TicketForm'
 
 function ContactPage() {
   const { hash } = useLocation();
@@ -21,6 +22,7 @@ function ContactPage() {
     <ContactHero />
     <EmailBox />
     <Reach />
+    <TicketForm />
     <Footer />
     </>
   )

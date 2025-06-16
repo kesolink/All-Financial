@@ -1,0 +1,58 @@
+@use "../mixins.scss";
+.ticket-container {
+  padding: 0px 200px;
+  @include mixins.respond(phone) {
+    padding: 0px 10px;
+  }
+  .header-wrapper {
+    margin-bottom: 24px;
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: rgb(29 78 216);
+      font-size: 16px;
+    }
+  }
+
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+  }
+
+  .ticket-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 15px;
+
+    // @include respond(tab) {
+    //   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    //   gap: 20px;
+    // }
+
+    // @include respond(phone) {
+    //   grid-template-columns: 1fr;
+    //   gap: 15px;
+    // }
+  }
+
+  .no-ticket {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    color: #64748b;
+  }
+}
