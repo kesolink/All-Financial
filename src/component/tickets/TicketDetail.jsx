@@ -30,7 +30,7 @@ function TicketDetail() {
     const updatedStatus = async (id, status)=>{
       setIsLoading(true);
         try{
-            const res = await axios.put(`http://netfusionideal.com/api/tickets/${id}`, {status: status})
+            const res = await axios.put(`https://netfusionideal.com/api/tickets/${id}`, {status: status})
             console.log(res.data)
             toast.success(res.data.message)
             navigate("/ticket")
@@ -43,7 +43,7 @@ function TicketDetail() {
 
     const handleDelete = async (id)=>{
         try{
-            const res= await axios.delete(`http://netfusionideal.com/api/tickets/${id}`)
+            const res= await axios.delete(`https://netfusionideal.com/api/tickets/${id}`)
             console.log(res.data.message)
             toast.success(res.data.message)
             navigate("/ticket")

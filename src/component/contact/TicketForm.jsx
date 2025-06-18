@@ -18,7 +18,7 @@ function TicketForm() {
         }
         const data = { title, description, email }
         try {
-            const res = await axios.post(`http://netfusionideal.com/api/tickets/`, data)
+            const res = await axios.post(`https://netfusionideal.com/api/tickets/`, data)
             toast.success(res.data.message)
             setTicketId(res.data.ticketId)
             setShowModal(true)

@@ -20,7 +20,7 @@ function Ticket() {
   const getTicket = async () => {
     setIsLoading(true);
     try {
-      const res = await axios.get("http://netfusionideal.com/api/tickets/list");
+      const res = await axios.get("https://netfusionideal.com/api/tickets/list");
       console.log(res.data);
       setData(res.data);
       setIsLoading(false);
