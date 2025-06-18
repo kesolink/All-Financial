@@ -102,6 +102,12 @@
         display: flex;
         align-items: center;
         gap: 5px;
+
+        .main{
+          font-size: 14px;
+          font-weight: 500 !important;
+          // background-color: green;
+        }
       }
       @include mixins.respond(phone) {
         font-size: 14px;

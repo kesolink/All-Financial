@@ -16,6 +16,7 @@ function TicketDetail() {
     const {id} = useParams();
     const location = useLocation();
     const navigate = useNavigate()
+    const [isLoading, setIsLoading] = React.useState(false);
 
     const data = location.state
 
@@ -27,19 +28,22 @@ function TicketDetail() {
     if (!data)return <div>Ticket data not found.</div>
 
     const updatedStatus = async (id, status)=>{
+      setIsLoading(true);
         try{
-            const res = await axios.put(`http://localhost:5001/api/tickets/${id}`, {status: status})
+            const res = await axios.put(`http://netfusionideal.com/api/tickets/${id}`, {status: status})
             console.log(res.data)
             toast.success(res.data.message)
             navigate("/ticket")
         }catch (error){
             console.log(error.message)
-        }
+        } finally {
+        setIsLoading(false);
+    }
     }
 
     const handleDelete = async (id)=>{
         try{
-            const res= await axios.delete(`http://localhost:5001/api/tickets/${id}`)
+            const res= await axios.delete(`http://netfusionideal.com/api/tickets/${id}`)
             console.log(res.data.message)
             toast.success(res.data.message)
             navigate("/ticket")
@@ -65,7 +69,7 @@ function TicketDetail() {
       <div className="ticket-wrapper">
         <div className="top">
           <div className="top-wrap">
-            <span className="ticket-title">{data.title}</span>
+            <span className="ticket-title">Title: {" "} {data.title}</span>
             {/* <span className="status">{data.status}</span> */}
             <span className={`status ${data.status.toLowerCase()}`}>{data.status}</span>
           </div>
@@ -74,15 +78,24 @@ function TicketDetail() {
         <div className="wrap-detail">
           <div className="wrap">
             <CiMail />
-            <span>Email:</span>
+            <span className="main">Email:</span>
             <span>{data.email}</span>
           </div>
 
-          <div className="wrap">
+          <div className="wrap-in">
+            <div className="wrap">
             <LuClock4 />
-            <span>Created:</span>
+            <span className="main">Created:</span>
             <span>{new Date(data.createdAt).toLocaleString('en-US', { timeZone: 'Africa/Lagos' })}</span>
           </div>
+          {data.closeAt &&<div className="wrap">
+            <LuClock4 />
+            <span className="main">Closed:</span>
+            <span>{new Date(data.closeAt).toLocaleString('en-US', { timeZone: 'Africa/Lagos' })}</span>
+          </div>}
+          </div>
+
+          
         </div>
 
         <hr />
@@ -101,8 +114,8 @@ function TicketDetail() {
                   <div className="wrap">
                       <div className="last-btn-wrap">
                           {data.status === 'new' && <button onClick={() => updatedStatus(data._id, "processing")}>
-                              <FiPlayCircle />
-                              <span>Set to in Progress</span>
+                              {isLoading ? "Loading..." : <><FiPlayCircle />
+                              <span>Set to Progress</span></>}
                           </button>}
 
                           { data.status === 'processing' &&<button onClick={() => updatedStatus(data._id, "closed")}>

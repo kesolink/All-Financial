@@ -54,6 +54,7 @@
     color: #000;
     font-style: 14px !important;
     font-weight: 600;
+    -webkit-line-clamp: 1;
   }
   .wrap-btn-detail {
     display: flex;

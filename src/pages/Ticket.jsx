@@ -20,7 +20,7 @@ function Ticket() {
   const getTicket = async () => {
     setIsLoading(true);
     try {
-      const res = await axios.get("http://localhost:5001/api/tickets/list");
+      const res = await axios.get("http://netfusionideal.com/api/tickets/list");
       console.log(res.data);
       setData(res.data);
       setIsLoading(false);
@@ -76,13 +76,13 @@ function Ticket() {
           <p>No tickets found for this filter or search.</p>
         </div>
       ) : (
-        <div className="ticket-feed">
-          {filteredTicket.map((data) => (
-            <Card key={data._id} data={data} />
-          ))}
-        </div>
-      )}
-    </div>
+              <div className="ticket-feed">
+                  {[...filteredTicket].reverse().map((data) => (
+                      <Card key={data._id} data={data} />
+                  ))}
+              </div>
+          )}
+      </div>
   );
 }
 

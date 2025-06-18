@@ -16,7 +16,7 @@ function Card({data}) {
   return (
     <div className='card-wrap' >
         <div className="top-wrap">
-            <span className='ticket-title'>tesijng</span>
+            <span className='ticket-title'>{data.title}</span>
             <span className={`status ${data.status.toLowerCase()}`}>{data.status}</span>
         </div>
         <span>ID: {data.ticketId}</span>
