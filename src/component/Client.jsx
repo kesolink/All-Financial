@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import YTC from "../assets/YCT.jpg";
 import HMFB from "../assets/HMFB.jpg";
 import molusi from "../assets/molusi-logo.jpg"
+import plugbank from "../assets/plugbank.jpg"
 function Client() {
 
     const [hoveredLogo, setHoveredLogo] = useState(null);
@@ -33,6 +34,24 @@ function Client() {
           logo: molusi,
           url: "",
         },
+         {
+          name: "Plugbank MicroFinance",
+          description: "Providing smart, secure, and flexible financial solutions for the digital age.",
+          logo: plugbank,
+          url: "",
+        },
+        // {
+        //   name: "YCT Microfinance Bank",
+        //   description: "Bringing fast, secure, and accessible digital banking to everyone.",
+        //   logo: YTC,
+        //   url: "",
+        // },
+        // {
+        //   name: "Molusi Microfinance Bank",
+        //   description: "MFB providing grass root financial service",
+        //   logo: molusi,
+        //   url: "",
+        // },
       ];
   return (
     <section className="client-showcase">
@@ -62,7 +81,7 @@ function Client() {
                 </div>
                 <div className="client-info">
                   <h3>{client.name}</h3>
-                  <p className="description">{client.description}</p>
+                  {/* <p className="description">{client.description}</p> */}
                 </div>
               </div>
             </div>

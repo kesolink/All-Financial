@@ -16,12 +16,16 @@ $shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .header-section {
   text-align: center;
   margin-bottom: 4rem;
+  width: 100%;
   
   h2 {
     font-size: 2.25rem;
@@ -39,24 +43,37 @@ $shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
 }
 
 .client-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
   
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    // For tablets - 2 cards per row
+    .client-card {
+      flex: 0 1 calc(50% - 1rem); // Subtract half the gap
+    }
   }
   
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+    // For desktops - 4 cards per row
+    .client-card {
+      flex: 0 1 calc(25% - 1.5rem); // Subtract part of the gap
+    }
   }
 }
 
 .client-card {
-  display: block;
+  flex: 0 1 100%; // Full width on mobile
+  max-width: 400px; // Maximum card width
   cursor: pointer;
   
   .card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: white;
     border-radius: 1rem;
     padding: 2rem;
@@ -76,12 +93,14 @@ $shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
   position: relative;
   margin-bottom: 1.5rem;
   overflow: hidden;
+  width: 100%;
   
   .client-logo {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: all $transition-duration;
+    
     &.hovered {
       transform: scale(1.1);
       filter: none;
@@ -91,6 +110,7 @@ $shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
 
 .client-info {
   text-align: center;
+  width: 100%;
   
   h3 {
     font-size: 1.125rem;
@@ -99,12 +119,8 @@ $shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
     margin-bottom: 0.5rem;
     transition: color $transition-duration;
   }
-  // p{
-  //   font-size: 18px;
-  // }
   
   .description {
-    // font-size: 0.875rem;
     font-size: 16.5px;
     color: $gray-600;
   }
@@ -117,6 +133,7 @@ $shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
 .cta-section {
   margin-top: 4rem;
   text-align: center;
+  width: 100%;
   
   .cta-text {
     font-size: 1.125rem;

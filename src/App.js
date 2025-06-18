@@ -11,6 +11,8 @@ import Ticket from './pages/Ticket';
 import TicketDetail from './component/tickets/TicketDetail';
 import { Toaster} from 'sonner'
 
+
+
 function App() {
   useEffect(() => {
     window.scrollTo({top:0, left:0, behavior: 'smooth'})
