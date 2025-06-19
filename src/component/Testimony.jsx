@@ -11,7 +11,7 @@ const Testimony = () => {
       company: "TechVision Global",
       image:
         "https://public.readdy.ai/ai/img_res/6e8ae144fbdae1474d3a2119aee8a8e3.jpg",
-      text: "All Financial attends issues promptly.",
+      text: "The team has a very responsive support system.",
       rating: 5,
       date: "2025-03-20",
     },

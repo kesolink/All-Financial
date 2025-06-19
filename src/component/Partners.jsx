@@ -5,6 +5,7 @@ import value from "../assets/value.jpg";
 import citidata from "../assets/citidata.jpg";
 import protest from "../assets/protest.jpg"
 import logic from "../assets/logic.jpg"
+import dsgs from "../assets/dsgs.jpg"
 function Partners() {
 
     const [hoveredLogo, setHoveredLogo] = useState(null);
@@ -35,12 +36,12 @@ function Partners() {
           url: "",
         },
 
-        // {
-        //   name: "YCT Microfinance Bank",
-        //   description: "Bringing fast, secure, and accessible digital banking to everyone.",
-        //   logo: YTC,
-        //   url: "",
-        // },
+        {
+          name: "YCT Microfinance Bank",
+          description: "Bringing fast, secure, and accessible digital banking to everyone.",
+          logo: dsgs,
+          url: "",
+        },
         // {
         //   name: "Molusi Microfinance Bank",
         //   description: "MFB providing grass root financial service",

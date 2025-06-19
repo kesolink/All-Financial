@@ -24,13 +24,13 @@ function Reach() {
             <p>Allfinc.customerhelp@gmail.com</p>
           </div>
         </div>
-        <div className="box">
+        <a href="https://g.co/kgs/BNQH8Kv" target="_blank" rel="noopener noreferrer" className="box-a">
           <img src={place} alt="" />
           <div className="wrap">
             <span>Address: </span>
             <p> 46, Akinsoji Street Fadeyi, Lagos- Nigeria</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );

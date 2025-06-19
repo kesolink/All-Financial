@@ -29,7 +29,7 @@ function Core() {
                     <img src={img2} alt="" />
                     </div>
                     <div className="wrap">
-                        <span>Messaging:</span>
+                        <span>Multi Tenancy:</span>
                         <p>  MULTI-TENANT and INTERBRANCH Functionality</p>
                     </div>
                 </div>

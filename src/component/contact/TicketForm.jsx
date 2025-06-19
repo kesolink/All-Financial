@@ -40,6 +40,14 @@ function TicketForm() {
 
     return (
         <div className='ticket-form-container'>
+            <div className="ticket-header">
+                <h2>Need Help? Submit a Ticket</h2>
+                {/* <p>
+                    If you're facing any issues or have concerns, please fill out the form below.
+                    Our support team will get back to you as soon as possible.
+                </p> */}
+            </div>
+
             <div className="ticket-box">
                 <h1>Submit a Complaint</h1>
                 <div className="group-input">
