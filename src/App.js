@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Toaster position="top-right" />
+      <Toaster position="top-right" richColors />
       <ScrollToTop />
       <Routes>
       <Route  path="/" element={<LandingPage/>}/>

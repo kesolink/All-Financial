@@ -199,3 +199,65 @@
     }
   }
 }
+
+
+
+.ticket-images-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+
+  .ticket-thumbnail {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  @include mixins.respond(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+
+    .ticket-thumbnail {
+      height: 120px;
+    }
+  }
+
+  @include mixins.respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .ticket-thumbnail {
+      height: 100px;
+    }
+  }
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  .fullscreen-img {
+    max-width: 95vw;
+    max-height: 90vh;
+    border-radius: 10px;
+
+    @include mixins.respond(phone) {
+      max-width: 90vw;
+      max-height: 80vh;
+    }
+  }
+}

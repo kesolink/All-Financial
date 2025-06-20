@@ -21,7 +21,6 @@ function Ticket() {
     setIsLoading(true);
     try {
       const res = await axios.get("https://netfusionideal.com/api/tickets/list");
-      console.log(res.data);
       setData(res.data);
       setIsLoading(false);
     } catch (error) {
@@ -46,7 +45,6 @@ function Ticket() {
   });
 
   const handleFilterChange = (newFilter) => {
-    console.log(newFilter);
     setFilter(newFilter);
   };
 
